@@ -12,7 +12,7 @@ struct Vector vector_sub(struct Vector a, struct Vector b)
 
 struct Vector vector_cross(struct Vector a, struct Vector b)
 {
-    return (struct Vector){a.y * a.z - b.z * b.y, a.x * a.z - b.z * b.x, a.x * a.y - b.y * b.x};
+    return (struct Vector){a.y * b.z - a.z * b.y, a.z * b.x - a.x * b.z, a.x * b.y - a.y * b.x};
 }
 
 double vector_dot(struct Vector a, struct Vector b)
